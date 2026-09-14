@@ -58,10 +58,25 @@ def submit(shot_id,prompt,dry):
     if not record['task_id']: record['state']='BLOCKED'; tx.write_text(json.dumps(record,ensure_ascii=False,indent=2)); raise RuntimeError(f'No task_id: {response}')
     record['state']='SUBMITTED_TASK_ID_BOUND'; tx.write_text(json.dumps(record,ensure_ascii=False,indent=2)); return record
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--idea',required=True,help='用户创意；必须先提供并固化后才会生成镜头'); ap.add_argument('--reference'); ap.add_argument('--run-id',default='storyclaw_v1'); ap.add_argument('--dry-run',action='store_true'); ap.add_argument('--model',choices=['seedance-2.0-pro','MiniMax-H3']); args=ap.parse_args()
+    ap=argparse.ArgumentParser(description='AdForge onboarding + Giggle 广告生成器'); ap.add_argument('--idea',help='用户创意；必须先提供并固化后才会生成镜头'); ap.add_argument('--reference',help='产品参考图 PNG/JPG'); ap.add_argument('--run-id',default='storyclaw_v1'); ap.add_argument('--dry-run',action='store_true'); ap.add_argument('--model',choices=['seedance-2.0-pro','MiniMax-H3']); args=ap.parse_args()
     global MODEL, RUN_ID, REFERENCE
     if args.model: MODEL=args.model
     RUN_ID=args.run_id; REFERENCE=args.reference
+    if not args.idea:
+        if not sys.stdin.isatty():
+            ap.error('--idea 必填。示例：--idea "让产品连接全球 AI 推理需求"')
+        print('\nAdForge 首次使用向导')
+        print('1) 先输入你的广告创意；不要只输入产品名。')
+        print('2) 准备产品参考图，保持产品外观一致。')
+        print('3) 生成前会写入创意 brief，并按镜头逐个提交 Giggle。')
+        args.idea=input('\n请输入广告创意：').strip()
+        if not args.idea: ap.error('创意不能为空')
+    if not REFERENCE and sys.stdin.isatty():
+        value=input('产品参考图路径（可回车跳过，跳过则使用纯文本生成）：').strip()
+        REFERENCE=value or None
+    if not KEY and not args.dry_run:
+        print('未检测到 GIGGLE_API_KEY。请复制 .env.example 为 .env 并填写 Key，再重新运行。')
+        raise SystemExit(2)
     results=[]
     creative = f"用户创意：{args.idea}。严格围绕这个创意，不添加未经证实的产品功能，不生成字幕或Logo。"
     (DATA/'creative_brief.json').write_text(json.dumps({'creative_idea':args.idea,'product':'StoryClaw设备','language':'中文','aspect_ratio':'16:9','duration_seconds':60,'status':'CREATIVE_LOCKED'},ensure_ascii=False,indent=2))

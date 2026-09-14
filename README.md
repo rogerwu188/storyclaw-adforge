@@ -19,8 +19,34 @@ cp .env.example .env
 # 编辑 .env，设置 GIGGLE_API_KEY
 docker compose up --build
 curl http://localhost:8000/healthz
-python scripts/generate_storyclaw_ad.py --dry-run
+python scripts/generate_storyclaw_ad.py --dry-run --idea "让我的产品解决一个明确的用户问题"
 ```
+
+## 新用户向导
+
+不要直接把产品名当作创意。先写清楚“给谁看、解决什么问题、希望观众做什么”。例如：
+
+```text
+让一台 StoryClaw 设备把闲置算力接入全球 AI 推理网络，让每一次推理请求都找到合适的节点。
+```
+
+首次运行可以省略 `--idea`，终端会进入交互式向导，解释创意、参考图和 API Key 的准备方式：
+
+```bash
+python scripts/generate_storyclaw_ad.py --reference data/reference/product.png
+```
+
+无交互终端（CI、服务器、Docker worker）必须显式传入 `--idea`；缺少时程序会返回可复制的示例命令，不会静默生成内容。
+
+完整新用户流程：
+
+1. `cp .env.example .env`，在本地 `.env` 中填写自己的 `GIGGLE_API_KEY`。
+2. 准备产品参考图、Logo、品牌颜色和不能出现的承诺。
+3. 用 `--idea` 提交用户创意；程序会保存 `data/creative_brief.json`。
+4. 选择 `seedance-2.0-pro` 或 `MiniMax-H3`，生成不超过 15 秒的分镜。
+5. 用后期脚本混入旁白和音乐，再运行媒体验收。
+
+付费生成前请先使用 `--dry-run` 检查创意和参数。每个任务会在 `data/transactions/` 写入事务记录，失败或超时不能盲目重复提交。
 
 真实生成：
 
