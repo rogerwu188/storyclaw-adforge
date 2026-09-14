@@ -28,6 +28,14 @@ python scripts/generate_storyclaw_ad.py --dry-run
 python scripts/generate_storyclaw_ad.py --model seedance-2.0-pro
 ```
 
+世界级成片需要显式创意输入和产品参考图：
+
+```bash
+python scripts/generate_storyclaw_ad.py --idea "用户的广告创意" --reference data/reference/product.png --run-id campaign_v1
+python scripts/postprocess_worldclass.py --video outputs/campaign_v1_storyclaw_60s_zh_16x9.mp4 --voice data/audio/narration.mp3 --music data/audio/music.mp3 --out outputs/final.mp4
+python packages/post/verify_media.py outputs/final.mp4
+```
+
 脚本默认只会提交 Giggle 任务，不会自动发布到任何广告平台。每次付费 POST 前会写入 `data/transactions/`；任务失败后必须先对账，不能盲目重提。
 
 ## 目录
