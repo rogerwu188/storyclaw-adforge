@@ -1,0 +1,107 @@
+[
+  {
+    "name": "google_video",
+    "url": "https://support.google.com/google-ads/answer/6167120?hl=en",
+    "final": "https://support.google.com/google-ads/answer/6167140?hl=en&visit_id=639250224567340070-291316165&rd=1",
+    "chars": 5923,
+    "excerpts": [
+      "Optimize performance with App Connect",
+      "Account security and safety",
+      "Smart Bidding trains its artificial intelligence models on hundreds of billions of search queries and combinations of signals, then uses these signals at auction-time to set bids to hit advertiser goals.",
+      "1STOPlighting is a retail lighting store offering indoor and outdoor lighting fixtures, patio umbrellas, furniture, and more. They wanted to grow revenue while maintaining profits across multiple brands and product categories. After testing target ROAS bidding to optimize toward profit goals, the company saw a significant jump in performance. 1STOPlighting transitioned all of their shopping campaigns to bid towards a target ROAS and were able to increase profit by 214%."
+    ]
+  },
+  {
+    "name": "tiktok_best",
+    "url": "https://ads.tiktok.com/help/article/creative-best-practices?lang=en",
+    "final": "https://ads.tiktok.com/resources/help/article/creative-best-practices?lang=en",
+    "chars": 4368,
+    "excerpts": [
+      "Creative is an important consideration when building high-performing ads. You don't have to be a marketing guru or video editing expert to produce ads that capture your audience's attention. We've compiled a list of best practices to help you find the best creative for your audience.",
+      "Ensure that you have the basics, such as using sound/ music, orienting vertically at 9:16, shooting at least 720P resolution, and keeping your content visible within the UI safe zone as per ad specifications.",
+      "We recommend featuring people such as creators, employees, or customers to capture attention and increase engagement.",
+      "Lean into trends to make your ads feel more relevant and engaging. Our users like it when brands use trends, memes, or challenges on TikTok to make new content.",
+      "Follow well-proven content structures that sell: Have a hook, highlight your unique selling points, and end with a clear call-to-action.",
+      "Prioritize your hook in the first 6 seconds to boost engagement and increase watch time. You can do so by creating suspense, surprise, or other emotions.",
+      "Introduce your content proposition in the first 3 seconds for better recall and awareness.",
+      "Use captions or text overlays to provide context to your ad. We recommend displaying 5-10 words per second when using text."
+    ]
+  },
+  {
+    "name": "tiktok_symphony",
+    "url": "https://ads.tiktok.com/business/en-US/solutions/symphony",
+    "final": "https://ads.tiktok.com/business/en-US/solutions/symphony",
+    "chars": 1721,
+    "excerpts": [
+      "Branding",
+      "Brand Safety",
+      "Branding",
+      "Brand Safety"
+    ]
+  },
+  {
+    "name": "giggle_sd2_source",
+    "url": "https://raw.githubusercontent.com/giggle-official/skills/main/skills/giggle-seedance2-gen/SKILL.md",
+    "final": "https://raw.githubusercontent.com/giggle-official/skills/main/skills/giggle-seedance2-gen/SKILL.md",
+    "chars": 10471,
+    "excerpts": [
+      "name: giggle-seedance2-gen",
+      "  Use when the user wants to generate AI video, optimize video prompts, or work with Seedance 2.0.",
+      "  Triggers: generate video, AI video, seedance, giggle, 视频提示词, image to video, text to video, omni, 多模态, 短剧, 广告视频, 首帧图, 角色参考.",
+      "  (User may say 即梦 as generic Seedance habit; delivery stays giggle.pro.)",
+      "# Giggle · Seedance 2.0 视频生成与提示词（合并版）",
+      "本技能 = **Giggle API 成片**（`scripts/generation_api.py`）+ **Seedance 2.0 提示词工程资料库**（`references/`、`prompts/`）。",
+      "资料库为通用 Seedance 提示词最佳实践；**视频与多模态成片仅通过 giggle.pro 提交**。实际调用本仓库脚本时遵守下表：",
+      "| 时长 | **4–15** 秒整数，`--duration` |",
+      "| 画幅 / 清晰度 | `--aspect-ratio`、`--resolution` |",
+      "**Match the user's input language exactly. Never translate. Never output a second language version.**",
+      "### Seedance 2.0 核心能力速查",
+      "| ≤15秒 | 路径A | 帮用户找到一个**有传播力的单一视觉 hook**；参考 [creative-strategy.md](references/creative-strategy.md) 爆款模式库 |",
+      "1. **时长**：短片 4–8s / 中 9–12s / 长 13–15s / 超长 >15s",
+      "| 13–15秒 | 时间戳分镜法（0-3s / 4-8s / 9-12s / 13-15s 逐段描述） |",
+      "2. **平台**：prompt-engineering.md 中涉及「即梦平台」「NanoBanana」的内容，以本文件 Giggle 约束（时长 4–15s、图片 ≤9 张、@引用命名等）为准。",
+      "  --model seedance-2.0-pro --duration 5 --aspect-ratio 16:9 --resolution 720p",
+      "  --start-frame \"url:<URL>\" --model seedance-2.0-pro --duration 5",
+      "  --model seedance-2.0-pro --duration 5",
+      "| `--model` | `seedance-2.0-pro` | `seedance-2.0-pro` / `seedance-2.0-fast` / `seedance-2.0-mini` |",
+      "| `--duration` | `5` | 4–15 seconds |",
+      "| `--aspect-ratio` | `16:9` | `16:9` / `9:16` / `1:1` / `3:4` / `4:3` |",
+      "| `--resolution` | `720p` | `480p` / `720p`/ `1080p`/ `4k` |",
+      "- [ ] 13–15秒视频已使用时间戳分镜，覆盖完整时长无遗漏",
+      "- [ ] `duration ∈ [4,15]`（整数）",
+      "| `duration 不合法` | 传入了非 4–15 的整数（如 3、16、5.5） | 确认 `--duration` 为 4–15 整数 |"
+    ]
+  },
+  {
+    "name": "giggle_h3_source",
+    "url": "https://raw.githubusercontent.com/giggle-official/skills/main/skills/giggle-minimax-h3-gen/SKILL.md",
+    "final": "https://raw.githubusercontent.com/giggle-official/skills/main/skills/giggle-minimax-h3-gen/SKILL.md",
+    "chars": 10148,
+    "excerpts": [
+      "name: giggle-minimax-h3-gen",
+      "  Use when the user wants to generate AI video, optimize video prompts, or work with MiniMax-H3.",
+      "  Triggers: generate video, AI video, minimax-h3, giggle, 视频提示词, image to video, text to video, omni, 多模态, 短剧, 广告视频, 首帧图, 角色参考.",
+      "# Giggle · MiniMax-H3 视频生成与提示词（合并版）",
+      "本技能 = **Giggle API 成片**（`scripts/generation_api.py`）+ **MiniMax-H3 提示词工程资料库**（`references/`、`prompts/`）。",
+      "资料库为通用 MiniMax-H3 提示词最佳实践；**视频与多模态成片仅通过 giggle.pro 提交**。实际调用本仓库脚本时遵守下表：",
+      "| 时长 | **3–15** 秒整数，`--duration` |",
+      "| 画幅 / 清晰度 | `--aspect-ratio`、`--resolution` |",
+      "**Match the user's input language exactly. Never translate. Never output a second language version.**",
+      "### MiniMax-H3 核心能力速查",
+      "| ≤15秒 | 路径A | 帮用户找到一个**有传播力的单一视觉 hook**；参考 [creative-strategy.md](references/creative-strategy.md) 爆款模式库 |",
+      "1. **时长**：短片 3–8s / 中 9–12s / 长 13–15s / 超长 >15s",
+      "| 13–15秒 | 时间戳分镜法（0-3s / 4-8s / 9-12s / 13-15s 逐段描述） |",
+      "2. **平台**：references 中的通用提示词方法，以本文件 MiniMax-H3 的 Giggle 约束（时长 3–15s、图片 ≤9 张、@引用命名等）为准。",
+      "  --model MiniMax-H3 --duration 4 --aspect-ratio 16:9 --resolution 480p",
+      "  --start-frame \"url:<URL>\" --model MiniMax-H3 --duration 4",
+      "  --model MiniMax-H3 --duration 4",
+      "| `--model` | `MiniMax-H3` | `MiniMax-H3` |",
+      "| `--duration` | `4` | `3` / `4` / `5` / `6` / `7` / `8` / `9` / `10` / `11` / `12` / `13` / `14` / `15` seconds |",
+      "| `--aspect-ratio` | `16:9` | `1:1` / `9:16` / `16:9` / `4:3` / `3:4` |",
+      "| `--resolution` | `480p` | `480p` / `768p` |",
+      "- [ ] 13–15秒视频已使用时间戳分镜，覆盖完整时长无遗漏",
+      "- [ ] `duration ∈ [3,15]`（整数）",
+      "| `duration 不合法` | 传入了非 3–15 的整数（如 2、16、5.5） | 确认 `--duration` 为 3–15 整数 |"
+    ]
+  }
+]

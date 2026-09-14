@@ -1,0 +1,294 @@
+API for Automated Video Generation - Creatomate
+Creatomate
+Product
+▾
+Use Cases
+Pricing
+Docs
+Product
+No-Code Automation
+API & SDK
+Bulk Generation
+Shareable Forms
+Embed & Preview SDK
+Template Editor
+Use Cases
+Pricing
+Docs
+Search
+Creatomate
+Get started
+→
+The Video & Image
+Creation API
+Creatomate is the creative automation platform for developers and no-code users.
+Get started for free
+→
+See how it works
+01
+Create a template
+02
+Automate with thousands of apps
+03
+Use the API for even more control
+terminal — zsh
+● live
+curl
+-X
+POST
+https://api.creatomate.com/v2/renders
+\
+-H
+"Content-Type: application/json"
+\
+-H
+"Authorization: Bearer
+API_KEY
+"
+\
+-d
+'{
+"template_id"
+:
+"83298a57-a096..."
+,
+"modifications"
+:
+{
+"Title"
+:
+"This text is placed in your video"
+,
+"Title.fill_color"
+:
+"
+#4980f1
+"
+,
+"Background-Video"
+:
+"https://example.com/video.mp4"
+}
+}'
+No-Code Automation
+Bulk Generation
+API Integration
+Web Integration
+Automate Marketing
+Tasks using
+No-Code
+Set up automated workflows that eliminate repetitive image and video production tasks.
+✓
+Launch automations with
+10,000 apps.
+✓
+Easy to set up, no technical skills required.
+Get started
+→
+Read more
+Trigger
+New Data
+from Airtable
+Action 01
+Create a Video or Image
+via Creatomate
+Action 02
+Post to Social Media
+Instagram / YouTube / ...
+Mass-Produce Through
+a
+Spreadsheet
+Generate tons of images and videos in bulk by feeding dynamic data into a template.
+✓
+Mass-replace
+images, videos, captions, and more.
+✓
+Import from and export to
+CSV file.
+Get started
+→
+Read more
+Create Videos & Images
+using a
+REST API
+Integrate the API and start producing videos and images using your coding language of choice.
+✓
+Generate from
+templates
+or
+JSON
+entirely.
+✓
+Easily integrate the API into
+your apps
+or
+workflows.
+Get started
+→
+API documentation
+Example:
+Generate from a Template
+# Here is how to generate an image or video based on a template.
+# First, set up a template using the
+online editor
+.
+# Then call the
+REST endpoint
+to render the template using custom data.
+curl
+-X POST https://api.creatomate.com/v2/renders \
+-H
+"Content-Type: application/json"
+\
+-H
+"Authorization: Bearer
+API_KEY
+"
+\
+-d '
+{
+"template_id"
+:
+"58c1163e-f250-49df-b98d-e8c4aad01a2d"
+,
+"modifications"
+:
+{
+"Title"
+:
+"Your Text And Video Here"
+,
+"Title.fill_color"
+:
+"#4980f1"
+,
+"Background-Video"
+:
+"https://example.com/video.mp4"
+}
+}'
+Develop
+Video-Powered
+Applications
+Integrate the JavaScript Preview SDK to add web-based editing to your apps.
+✓
+Interactive previews
+before creating final MP4s, JPGs, etc.
+✓
+Build
+full stack editor
+applications for the browser.
+Get started
+→
+Read more
+Get Started in Minutes
+Explore the tutorials and documentation to get started right away.
+Search the docs…
+⌘ K
+→
+Social Media
+Automate visuals and short-form videos for YouTube, Instagram, and TikTok.
+→
+Marketing
+Use automation to take care of repetitive marketing tasks in the background.
+→
+Videos & Images by Code
+Integrate the API into your apps to generate videos and images from dynamic data.
+→
+Personalization
+Mass-produce videos customized for an individual or occasion.
+Create
++
+Automate
+=
+Creatomate
+Create your own templates and start automating your video and image production.
+See examples
+→
+Start automating today
+Start with a full-featured trial with 50 credits, no credit card required.
+Get started for free
+→
+Creatomate
+Creatomate is the media automation platform for developers and no-code users.
+Have a question?
+[email protected]
+Tutorials & Guides
+All Tutorials & Guides
+Video Automation: 3 Ways to Automate Video Creation
+Create Many Videos in Bulk using a Spreadsheet
+How to Create Personalized Videos At Scale
+How to Batch-Create Videos for Shorts, Stories, and Reels
+How to Automate Video Creation with Zapier
+How to Automate Video Creation with Make (Integromat)
+How to Automatically Add Subtitles to Videos using Zapier
+How to Automatically Create and Post YouTube Shorts using Zapier
+How to Automatically Create and Post TikTok Videos using Zapier
+How to Automatically Create Instagram Posts using Make
+Get Started Creating Videos by Code (using the API)
+How to Create Video with PHP
+Using Node.js to Generate Instagram, YouTube, or TikTok Videos
+How to Build a Video Editor in JavaScript
+How-tos
+Create Video using Code
+Create Video in the Browser
+Dynamic Video Creation
+Edit Video by API
+YouTube Shorts by API
+TikTok Videos by API
+Instagram Stories by API
+Instagram Reels by API
+Social Media Posts by API
+Real Estate Video by API
+Personalized Video by API
+Text to Video by API
+Banner Ads by API
+Animated GIFs by API
+Create Images by API
+Create Instagram Stories with Zapier
+Create Instagram Reels with Zapier
+Create Images with Zapier
+AI-Generated Videos with Zapier
+AI-Generated Videos by API
+Automate using No-Code
+Videos & Images with Zapier
+Videos & Images with Make
+Videos & Images with Pabbly
+Videos & Images with n8n
+Automate using Code
+Videos & Images with Node.js
+Videos & Images with PHP
+Videos & Images with Python
+Videos & Images with an API
+Automate using AI
+AI Video Automation
+AI Voiceovers with Zapier
+AI Voiceovers with an API
+Videos by ChatGPT and Zapier
+Videos by ChatGPT and Code
+Generative Text AI (GPT-4)
+Generative Image AI (DALL·E)
+Generative Video AI (Stable Diffusion)
+Product
+No-code Automation
+Video & Image Editing API
+Spreadsheet to Videos & Images
+Form to Videos & Images
+JavaScript Preview SDK
+Template Editor
+Pricing
+Company & Resources
+Tutorials & Guides
+API Documentation
+Knowledge Base
+Get Help from AI
+AI Documentation (llms.txt)
+Terms and Conditions
+Privacy Policy
+About Us
+How We Compare
+The Best Video APIs Compared
+Alternative to Shotstack
+Alternative to Bannerbear
+© 2026 Creatomate. All rights reserved.
+Creatomate is a registered company from the Netherlands #90174356

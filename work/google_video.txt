@@ -1,0 +1,230 @@
+Finding success with Smart Bidding - Google Ads Help
+Skip to main content
+Google Ads Help
+Help Center
+Community
+Announcements
+Sign in
+Google Help
+Help Center
+Start advertising
+Campaigns
+Explore features
+Optimize performance
+Account & billing
+Fix issues
+Google Partners
+Community
+Google Ads
+Privacy Policy
+Terms of Service
+Submit feedback
+Send feedback on...
+This help content & information
+General Help Center experience
+Close
+Next
+Help Center
+Community
+Announcements
+Google Ads
+Start advertising
+Your guide to Google Ads
+8 steps to prepare your campaign for success
+Choose the right campaign type
+Determine your advertising goals
+How Google Ads can work for your industry
+Google Ads specs: ad formats, sizes, and best practices
+More advertising tools
+Google Ads basics
+Google Ads privacy
+Glossary
+Campaigns
+Performance Max
+AI Max for Search campaigns
+AI Max for Shopping campaigns
+Search campaigns
+Display campaigns
+Smart Campaigns
+App campaigns
+Shopping ads
+Video campaigns
+Hotel campaigns
+Demand Gen campaigns
+Call campaigns
+Things to do
+Events ticketing
+Explore features
+Ads, assets & landing pages
+Ad groups
+Keywords
+Bidding
+Targeting
+Measure results
+Bulk uploads & edits
+Campaign settings
+Optimize performance
+12 tips to advertising with Google Ads
+Google Ads Best Practices
+Optimization features
+Create effective Search ads
+Generative AI tools in Google Ads
+Improve with AI-powered Search
+Finding success with Smart Bidding
+Measure results
+Optimize performance with App Connect
+Google Ads training on Skillshop
+The Google Ads mobile app
+Account & billing
+Billing
+Account settings
+Account access
+Manager accounts
+Account security and safety
+Cancel or reactivate your account
+Working with client accounts
+Useful tools
+Fix issues
+Ad disapprovals and reviews
+Billing & payments
+Compromised account issues
+Policy issues
+Performance issues
+Account access issues
+Reporting issues
+Request implementation support for Google Ads and YouTube Reserve
+Google Ads API
+Google Partners
+Google Partners Program
+Google Ads Best Practices
+Finding success with Smart Bidding
+Finding success with Smart Bidding
+Best practices for automating and optimizing your bids.
+Smart Bidding uses Google AI to deliver better, more informed bids while saving you time. In this guide, we’ll talk about why you should use a
+Smart Bidding strategy
+and how to drive better results in Search campaigns.
+On this page
+1: Set up your account for success
+2: Pick the right bid strategy
+3: Test your bid strategy
+4: Evaluate your performance
+Step 1: Set up your account for success
+Create campaigns with single objectives, and use accurate conversion data. Then pair Smart Bidding with broad match keywords and responsive search ads to find additional queries.
+Smart Bidding trains its artificial intelligence models on hundreds of billions of search queries and combinations of signals, then uses these signals at auction-time to set bids to hit advertiser goals.
+1
+Learn more about setting up your account for success
+Step 2: Pick the right bid strategy
+Choose your
+bid strategy
+based on your main business goal. To make the most of AI-powered bidding, you can use Maximize conversions with an optional target CPA or Maximize conversion value with an optional target ROAS.
+Case Study
+1STOPlighting is a retail lighting store offering indoor and outdoor lighting fixtures, patio umbrellas, furniture, and more. They wanted to grow revenue while maintaining profits across multiple brands and product categories. After testing target ROAS bidding to optimize toward profit goals, the company saw a significant jump in performance. 1STOPlighting transitioned all of their shopping campaigns to bid towards a target ROAS and were able to increase profit by 214%.
+Learn more about picking the right bid strategy
+Step 3: Test your bid strategy
+Use Google Ads
+experiments
+to test one variable at a time on a large volume, long-running campaign. For example, you can test Maximize conversion value with an optional target ROAS against your existing bid strategy.
+On average, advertisers that switch their bid strategy from having a target CPA to a target ROAS can see 14% more conversion value at a similar return on ad spend.
+2
+Learn more about testing your bid strategies
+Step 4: Evaluate your performance
+The
+bid strategy report
+shows how your campaign is performing compared to your set performance goals.
+Recommendations
+can also help with ideas on how you can improve performance across your campaigns.
+If you know how Smart Bidding is performing, you can use those business insights elsewhere.
+Learn more about evaluating your bid strategy performance
+1. Google Internal Data, Global, April 2023
+2. Google Internal Data, Global, Feb 2023
+Was this helpful?
+How can we improve it?
+Submit
+Need more help?
+Try these next steps:
+Post to the help community
+Get answers from community members
+Contact us
+Tell us more and we’ll help you get there
+false
+Achieve your advertising goals today!
+Attend our Performance Max Masterclass, a livestream workshop session bringing together industry and Google ads PMax experts.
+Register now
+©2026 Google
+Privacy Policy
+Terms of Service
+Google Ads Advertising Policies
+About the Help Center
+Send feedback on...
+This help content & information
+General Help Center experience
+Enable Dark Mode
+Language
+català‎
+dansk‎
+Deutsch‎
+eesti‎
+English (Australia)‎
+English (United Kingdom)‎
+español‎
+español (Latinoamérica)‎
+Filipino‎
+français‎
+hrvatski‎
+Indonesia‎
+italiano‎
+latviešu‎
+lietuvių‎
+magyar‎
+Melayu‎
+Nederlands‎
+norsk‎
+polski‎
+português‎
+português (Brasil)‎
+română‎
+slovenčina‎
+slovenščina‎
+suomi‎
+svenska‎
+Tiếng Việt‎
+Türkçe‎
+čeština‎
+Ελληνικά‎
+български‎
+русский‎
+српски‎
+українська‎
+‏
+עברית
+‏
+العربية
+हिन्दी‎
+ไทย‎
+中文（简体）‎
+中文（繁體）‎
+中文（香港）‎
+日本語‎
+한국어‎
+English‎
+Search
+Clear search
+Close search
+Google apps
+Main menu
+15956739261922923359
+true
+Search Help Center
+true
+true
+true
+true
+true
+true
+73067
+false
+false
+true
+true
+false
+false
