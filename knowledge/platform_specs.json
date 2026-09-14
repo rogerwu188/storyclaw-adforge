@@ -1,0 +1,1 @@
+{"tiktok":{"aspect_ratio":"9:16","min_resolution":"720p","rules":["hook_first_3_seconds","clear_usp","clear_cta","ui_safe_zone"]},"youtube":{"aspect_ratio":"16:9","rules":["brand_safe","clear_cta"]}}

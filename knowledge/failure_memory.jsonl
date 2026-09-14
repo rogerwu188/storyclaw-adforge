@@ -1,0 +1,3 @@
+{"failure_code":"IDENTITY_DRIFT","do_not_repeat":"不要只写‘保持一致’，改用同一角色参考图、明确服装/道具/构图并做成片身份 QA","scope":"video","confidence":"observed"}
+{"failure_code":"TEXT_GIBBERISH","do_not_repeat":"画面生成不承担价格/品牌文字，文字在 FFmpeg 后期渲染；首帧禁止要求模型写字幕","scope":"all","confidence":"observed"}
+{"failure_code":"LONG_VIDEO_DRIFT","do_not_repeat":"每个 Giggle 镜头不超过 15 秒，使用尾帧/首帧桥接并在后期拼接","scope":"video","confidence":"observed"}
