@@ -1,0 +1,3 @@
+profile: DH
+hard_fail: [brand_name, compliance, gibberish, hook, cta, dialogue_exactness, brand_pronunciation, face_identity, lip_sync, authorization, ai_disclosure]
+soft_warning: [b_roll_continuity]

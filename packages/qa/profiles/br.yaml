@@ -1,0 +1,4 @@
+profile: BR
+hard_fail: [brand_name, compliance, gibberish, technical_spec, product_continuity, logo_orientation, ports, power_button, body_ratio, environment_logic, dialogue_exactness, brand_pronunciation, duration_matches_script]
+soft_warning: [rhythm]
+human_gates: [brief, storyboard, first_frames, rough_cut, final_cut]

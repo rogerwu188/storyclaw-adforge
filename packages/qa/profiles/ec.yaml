@@ -1,0 +1,3 @@
+profile: EC
+hard_fail: [brand_name, price, compliance, gibberish, technical_spec, hook, cta]
+soft_warning: [product_continuity, lighting, color]
