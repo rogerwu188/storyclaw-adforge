@@ -24,6 +24,8 @@ python scripts/generate_storyclaw_ad.py --dry-run --idea "让我的产品解决�
 
 ## 新用户向导
 
+如果使用 Codex 或 Claude Code，最简单的方式是直接把仓库交给 Agent，然后发送一句话。请先阅读 [ONE_SENTENCE_START.md](ONE_SENTENCE_START.md)；仓库根目录的 `AGENTS.md` 已定义自动执行合同。
+
 不要直接把产品名当作创意。先写清楚“给谁看、解决什么问题、希望观众做什么”。例如：
 
 ```text
