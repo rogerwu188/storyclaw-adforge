@@ -7,6 +7,7 @@ app = FastAPI(title="StoryClaw AdForge", version="0.1.0")
 DATA = Path("data/projects"); DATA.mkdir(parents=True, exist_ok=True)
 
 class CreativeBrief(BaseModel):
+    creative_idea: str
     product: str
     audience: str = "泛用户"
     selling_points: list[str] = []
