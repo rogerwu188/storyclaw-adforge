@@ -15,3 +15,5 @@ outputs/*
 *.png
 *.jpg
 !.github/
+
+work/
