@@ -22,6 +22,63 @@ curl http://localhost:8000/healthz
 python scripts/generate_storyclaw_ad.py --dry-run --idea "让我的产品解决一个明确的用户问题"
 ```
 
+## 给第一次使用者的 5 步说明
+
+### 1. 下载代码
+
+```bash
+git clone https://github.com/rogerwu188/storyclaw-adforge.git
+cd storyclaw-adforge
+```
+
+### 2. 准备环境
+
+需要 Python 3.11+、FFmpeg 和 Git。安装 Python 依赖：
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install requests
+```
+
+### 3. 获取并配置 Giggle API Key
+
+登录 [Giggle](https://giggle.pro/)，在 **API Key / API 密钥** 页面创建 Key，然后只保存在本机 `.env`：
+
+```bash
+cp .env.example .env
+# 编辑 .env，把 GIGGLE_API_KEY= 后面换成你的 Key
+```
+
+不要把 Key 发到 GitHub、聊天记录或代码里。
+
+### 4. 提供创意和素材
+
+准备一句话目标，以及产品图、PDF、品牌手册、电商网址或参考广告。可以先生成不收费的素材清单：
+
+```bash
+python scripts/intake_assets.py \
+  --idea "为我的产品制作一条面向开发者的中文品牌广告" \
+  --file ./product.png \
+  --file ./brief.pdf \
+  --url https://example.com/product
+```
+
+### 5. 先 dry-run，再生成
+
+```bash
+python scripts/generate_storyclaw_ad.py --dry-run \
+  --idea "为我的产品制作一条面向开发者的中文品牌广告"
+
+python scripts/generate_storyclaw_ad.py \
+  --idea "为我的产品制作一条面向开发者的中文品牌广告" \
+  --reference ./product.png \
+  --run-id my_campaign \
+  --model seedance-2.0-pro
+```
+
+镜头会保存在 `outputs/`。如果要加入旁白、音乐和字幕，运行后期脚本；最终文件仍需通过 `packages/post/verify_media.py`。每次生成可能产生 Giggle 费用，提交前请确认创意、素材和模型。
+
 ## 新用户向导
 
 如果使用 Codex 或 Claude Code，最简单的方式是直接把仓库交给 Agent，然后发送一句话。请先阅读 [ONE_SENTENCE_START.md](ONE_SENTENCE_START.md)；仓库根目录的 `AGENTS.md` 已定义自动执行合同。
