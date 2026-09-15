@@ -98,6 +98,6 @@ def main():
             time.sleep(10)
     if not args.dry_run:
         concat=OUT/f'{RUN_ID}_concat.txt'; concat.write_text('\n'.join(f"file '{(OUT/(RUN_ID+'_'+sid+'.mp4')).resolve()}'" for sid,_ in SHOTS))
-        target=OUT/f'{RUN_ID}_storyclaw_60s_zh_16x9.mp4'; subprocess.run(['ffmpeg','-y','-f','concat','-safe','0','-i',str(concat),'-c','copy',str(target)],check=True); print(target)
+        target=OUT/f'{RUN_ID}_storyclaw_60s_zh_16x9.mp4'; subprocess.run(['ffmpeg','-y','-f','concat','-safe','0','-i',str(concat),'-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-r','24','-c:a','aac','-ar','48000','-ac','2','-b:a','160k','-movflags','+faststart',str(target)],check=True); print(target)
     else: print('DRY_RUN_OK: five 12s shots, total 60s, 16:9')
 if __name__=='__main__': main()

@@ -5,6 +5,7 @@ from pathlib import Path
 def verify(path: str, expected_duration: float = 60, expected_ratio=(16,9)):
     p=Path(path)
     if not p.is_file(): raise FileNotFoundError(path)
+    subprocess.run(['ffmpeg','-v','error','-i',str(p),'-f','null','-'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
     out=subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration:stream=width,height,codec_type','-of','json',str(p)])
     info=json.loads(out); fmt=float(info['format']['duration']); video=next(s for s in info['streams'] if s['codec_type']=='video')
     ratio=video['width']/video['height']
