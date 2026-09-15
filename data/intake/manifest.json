@@ -1,0 +1,9 @@
+{
+  "creative_idea": "每个想法，都有一条回家的路：让一台 StoryClaw 设备把一个刚诞生的 AI 想法连接到全球推理网络。",
+  "files": [
+    {"path":"data/reference/storyclaw_clawbot.png","source":"Task3 / bp-slide-07.png","purpose":"canonical product reference","fact_level":"visual-approved"},
+    {"path":"/Users/rogerwu/Downloads/RelayPool_Technical_White_Paper_EN.pdf","source":"user attachment","purpose":"technical claims","fact_level":"source-document"},
+    {"path":"/Users/rogerwu/Downloads/Telegram Lite/StoryClaw_Global_AI_Inference_Exchange_INTR_EN.pdf","source":"user attachment","purpose":"product and ecosystem claims","fact_level":"source-document"}
+  ],
+  "urls": [], "reference_ads": [], "brand_kit": [], "approved_claims": [], "forbidden_claims": ["guaranteed earnings", "real-time node count", "SLA/speed claims", "hardware runs every model directly"]
+}

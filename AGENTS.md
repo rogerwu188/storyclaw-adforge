@@ -2,9 +2,9 @@
 
 当用户用一句话提出广告需求时，自动执行以下流程，不要求用户了解目录或命令：
 
-1. 把用户原话保存为 `data/creative_brief.json` 的 `creative_idea`，先提取产品、受众、问题、单一卖点、证明方式和 CTA。
+1. 先做素材摄入：接受用户一句话创意，以及文档、图片、电商网址、品牌手册、参考广告和其它用户认为有价值的素材；写入 `data/intake/manifest.json`，为每个源记录 SHA、来源、用途和事实等级。再把用户原话保存为 `data/creative_brief.json` 的 `creative_idea`，提取产品、受众、问题、单一卖点、证明方式和 CTA。
 2. 检查 `.env` 是否有 `GIGGLE_API_KEY`；没有时说明配置方法并停止付费调用。
-3. 检查 `data/reference/`、用户附件和项目资料库；优先使用真实产品图、品牌手册和已批准文案。找不到时先生成待确认的资产计划，不能把虚构规格当事实。
+3. 检查 `data/reference/`、用户附件、URL 和项目资料库；优先使用真实产品图、品牌手册和已批准文案。找不到时先生成待确认的资产计划，不能把虚构规格当事实。
 4. 生成中文/用户原语言的营销 brief、旁白、字幕、逐镜头脚本和平台规格。超过 15 秒必须拆为多个镜头。
 5. 先运行 dry-run 和 Schema/品牌/成本门；通过后才提交 Giggle。视频默认使用 `seedance-2.0-pro`，需要 H3 时必须明确记录模型。
 6. 每次提交前写 durable transaction；保存 task_id、prompt SHA、参考图 SHA、provider response 和 pay/refund/net。超时或 403 时停止，禁止盲目重提。
