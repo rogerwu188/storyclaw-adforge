@@ -80,7 +80,7 @@ def main():
     results=[]
     creative = f"用户创意：{args.idea}。严格围绕这个创意，不添加未经证实的产品功能，不生成字幕或Logo。"
     creative_id=f"storyclaw-BR-every-idea-home-v01-zh-r1"
-    (DATA/'creative_brief.json').write_text(json.dumps({'creative_id':creative_id,'creative_idea':args.idea,'product':'StoryClaw ClawBot','mode':'BR','lang':'zh','hook':'一粒想法光点在前三秒离开空白画布，寻找承载它的路径','proof':['实体 ClawBot 节点承载网络连接','请求沿节点路径获得回执式脉冲'],'cta':'每个想法，都有一条回家的路。StoryClaw｜连接每一个想实现的想法','aspect_ratio':'16:9','duration_seconds':'script_derived','status':'CREATIVE_LOCKED'},ensure_ascii=False,indent=2))
+    (DATA/'creative_brief.json').write_text(json.dumps({'creative_id':creative_id,'creative_idea':args.idea,'idea':args.idea,'product':'StoryClaw ClawBot','mode':'BR','lang':'zh','hook':'一粒想法光点在前三秒离开空白画布，寻找承载它的路径','proof':['实体 ClawBot 节点承载任务接入和节点身份','请求进入一个被选中的供应节点并返回 receipt 回执'],'cta':'每个想法，都有一条回家的路。StoryClaw｜连接每一个想实现的想法','aspect_ratio':'16:9','duration_seconds':'script_derived','status':'CREATIVE_LOCKED'},ensure_ascii=False,indent=2))
     if REFERENCE and Path(REFERENCE).is_file():
         import hashlib as _hashlib
         ref_sha=_hashlib.sha256(Path(REFERENCE).read_bytes()).hexdigest()
